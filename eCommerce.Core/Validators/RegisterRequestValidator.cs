@@ -24,7 +24,7 @@ namespace eCommerce.Core.Validators
                .NotNull().WithMessage("Gender is required");
 
             RuleFor(temp => temp.PersonName)
-               .NotEmpty().WithMessage("Person Name is Required")
+               .NotEmpty().WithMessage("Person Name should not be empty")
                .MaximumLength(50).WithMessage("Should be less than 50 letters");
 
 
